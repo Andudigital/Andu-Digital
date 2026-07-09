@@ -1,0 +1,407 @@
+/* ===============================
+   Andu Digital & IT Support
+   Professional IT Style
+================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+
+    background:
+    linear-gradient(
+    rgba(8,27,51,0.95),
+    rgba(8,27,51,0.95)
+    ),
+    url("images/it-background.jpg");
+
+    background-size:cover;
+    background-attachment:fixed;
+
+    color:white;
+    line-height:1.6;
+
+}
+
+/* HEADER */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:#081b33;
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 15px rgba(0,168,255,0.4);
+
+}
+
+.logo img{
+
+    width:90px;
+
+    animation:logoMove 3s infinite alternate;
+
+}
+
+@keyframes logoMove{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.1);
+    }
+
+}
+
+/* NAVIGATION */
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#00a8ff;
+
+}
+
+/* HERO SECTION */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.hero h1{
+
+    font-size:45px;
+
+    color:#00a8ff;
+
+    animation:fadeDown 2s;
+
+}
+
+.hero h2{
+
+    margin:15px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin:10px;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.btn{
+
+    margin-top:20px;
+
+    background:#00a8ff;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:#081b33;
+
+    transform:scale(1.1);
+
+}
+
+/* SECTIONS */
+
+section{
+
+    padding:60px 8%;
+
+    text-align:center;
+
+}
+
+section h2{
+
+    color:#00a8ff;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.profile{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #00a8ff;
+
+    margin:20px;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    color:#081b33;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    box-shadow:
+
+    0 0 15px rgba(0,168,255,.5);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#00a8ff;
+
+    color:white;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+/* CONTACT MAP */
+
+iframe{
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#081b33;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-top:2px solid #00a8ff;
+
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#00a8ff;
+
+    color:white;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+nav a{
+
+    margin:8px;
+
+    display:inline-block;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero h2{
+
+    font-size:20px;
+
+}
+
+section{
+
+    padding:40px 5%;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.logo img{
+
+    width:75px;
+
+}
+
+}
